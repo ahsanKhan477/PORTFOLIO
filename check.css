@@ -492,14 +492,72 @@ textarea {
     resize: none; /* User box ko khench na sakay design kharab hota hai */
 }
 
-/* Submit Button Customization */
-.contact-form .btn {
-    width: 100%; /* Mobile aur Desktop dono par bara aur prominent button */
-    padding: 1.8rem;
-    font-size: 1.8rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    cursor: pointer;
+/* ================= CONTACT SECTION ================= */
+.contact {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.contact .section-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.contact-item i {
+    color: #00bcd4;
+    font-size: 20px;
+}
+
+.contact-item a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-item a:hover {
+    color: #00bcd4;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .contact {
+        padding: 50px 5%;
+    }
+
+    .contact-info {
+        padding: 20px;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 16px;
+    }
 }
 
 /* =============================================
